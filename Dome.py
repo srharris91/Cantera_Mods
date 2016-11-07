@@ -2,6 +2,9 @@ import cantera as ct
 import numpy as np
 
 def Dome(a,y1,y2):
+    # a is a cantera module object
+    # y1 is an attribute of a (in a string '')
+    # y2 is also an attribute of a (in a string '')
     if (hasattr(a,y1)==0):
         raise ValueError("could not find %s attribute of %s" % (y1,a))
     if (hasattr(a,y2)==0):
