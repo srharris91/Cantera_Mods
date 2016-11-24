@@ -54,6 +54,9 @@ def Process(ax,a1,a2,x,y):
     """Plot the process frome state a1 to a2 on the axis
     Plot the process diagram on ax
     still a work in progress
+    ax -- a matplotlib.pyplot axis subplot or equivalent
+    a1 -- a cantera module object (default=ct.Water()) at state 1
+    a2 -- a cantera module object (default=ct.Water()) at state 2
     """
 
 if __name__=="__main__":
